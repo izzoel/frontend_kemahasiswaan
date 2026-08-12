@@ -1,15 +1,21 @@
 import Image from "next/image";
 import Header from "@/components/layouts/Header";
 import Hero from "@/components/layouts/sections/Hero";
+import Layanan from "@/components/layouts/sections/Layanan";
+import Post from "@/components/layouts/sections/Post";
 
 export default function Home() {
   return (
     <div className="font-sans dark:bg-black">
 
       <Header />
-      <main className="flex-1 w-full p-container-padding p-2 pb-margin-lg bg-surface bg-zinc-50">
+
+      <div className="space-y-5">
         <Hero />
-      </main>
+      </div>
+      <Layanan />
+      <Post />
+
 
       {/* <header className="w-full top-0 sticky shadow-md flex flex-col bg-primary dark:bg-primary z-50">
         <div className="flex items-center justify-between px-container-padding py-4 max-w-full">
